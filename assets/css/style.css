@@ -13,10 +13,10 @@
   src: url(../fonts/CormorantGaramond-Bold.ttf);
 }
 
-/* img {
+img {
   width: 100%;
   object-fit: contain;
-} */
+}
 
 body {
   font-family: "Garamont";
