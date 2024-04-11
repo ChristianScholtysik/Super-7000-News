@@ -13,10 +13,10 @@
   src: url(../fonts/CormorantGaramond-Bold.ttf);
 }
 
-img {
+/* img {
   width: 100%;
   object-fit: contain;
-}
+} */
 
 body {
   font-family: "Garamont";
@@ -96,6 +96,11 @@ header h1 {
     "ten";
   padding-left: 100px;
 }
+.aside {
+  height: 15.8rem;
+  width: 15.8rem;
+  border: 6px solid black;
+}
 
 .seven-p {
   grid-area: seven-p;
@@ -166,9 +171,4 @@ h4 {
   font-weight: 200;
   font-size: 1.5em;
   margin: 6px 0 8px 0;
-}
-.aside {
-  height: 15.8rem;
-  width: 15.8rem;
-  border: 6px solid black;
 }
