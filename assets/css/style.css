@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Garamont";
+  src: url(../fonts/CormorantGaramond-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Garamont Bold";
+  src: url(../fonts/CormorantGaramond-Bold.ttf);
+}
+
+body {
+  font-family: "Garamont";
+}
+
+header {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr; */
+}
+header h1 {
+  font-family: "Garamont Bold";
+  font-weight: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+.date-wrap {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.news-headline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+.news-headline h2 {
+  font-family: "Garamont Bold";
+}
