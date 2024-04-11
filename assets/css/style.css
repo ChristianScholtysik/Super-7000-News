@@ -13,18 +13,18 @@
   src: url(../fonts/CormorantGaramond-Bold.ttf);
 }
 
+/* img {
+  width: 100%;
+  object-fit: contain;
+} */
+
 body {
   font-family: "Garamont";
-  /* font-size: 16px; */
   width: 90vw;
   margin: 0 5vw;
   background-color: #e9e9e0;
+  height: 100vh;
 }
-
-/* header {
- display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr; */
 
 header h1 {
   font-family: "Garamont Bold";
@@ -49,7 +49,7 @@ header h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px 0;
+  margin: 15px 0;
 }
 
 .news-headline h2 {
@@ -61,11 +61,48 @@ header h1 {
 .news-headline p {
   font-family: "Garamont Bold";
   font-size: 1em;
-  margin-right: 5vw;
+  margin-right: 8vw;
 }
 /* main */
 /* grid area */
 
+.news-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows:
+    15vh 25vh 25vh
+    12vh;
+  grid-template-areas:
+    "one four seven seven aside-sec"
+    "two five seven seven aside-sec"
+    "three six seven seven aside-sec"
+    "three six seven-p seven-p aside-sec";
+  gap: 10px;
+  /* border: 5px solid red; */
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.news-wrap div p {
+  font-size: 1.3em;
+}
+
+.aside-sec {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 25vh 25vh 25vh;
+  grid-template-areas:
+    "eight"
+    "nine"
+    "ten";
+  padding-left: 50px;
+}
+
+.seven-p {
+  grid-area: seven-p;
+  font-size: 1.3em;
+  margin-top: 20px;
+}
 .one {
   grid-area: one;
 }
@@ -95,7 +132,7 @@ header h1 {
 .eight {
   grid-area: eight;
   font-family: "Garamont Bold";
-  font-size: 2.8em;
+  font-size: 3.8em;
   text-align: center;
   padding: 0.5rem 0.5rem;
 }
@@ -118,36 +155,17 @@ header h1 {
   grid-area: ten;
   display: flex;
   justify-content: center;
-  padding: 0.8rem 0.8rem;
+  padding: 0.9rem 0.9rem;
 }
 
-.news-wrap {
-  height: 80vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas:
-    "one four seven seven eight"
-    "two five seven seven nine"
-    "three six seven seven ten";
-  gap: 50px;
-  padding: 0 5vw;
-  border: 5px solid red;
-}
 h4 {
   font-family: "Garamont Bold";
   font-weight: 200;
-  font-size: 1.2em;
-  margin: 15px 0 8px 0;
-}
-
-.news-wrap p {
-  font-family: "Garamont";
-  font-weight: 200;
-  font-size: 1em;
+  font-size: 1.5em;
+  margin: 6px 0 8px 0;
 }
 .aside {
-  height: 12.5rem;
-  width: 12.5rem;
-  border: 4px solid black;
+  height: 15.8rem;
+  width: 15.8rem;
+  border: 6px solid black;
 }
