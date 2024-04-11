@@ -78,7 +78,6 @@ header h1 {
     "three six seven seven aside-sec"
     "three six seven-p seven-p aside-sec";
   gap: 10px;
-  /* border: 5px solid red; */
   padding: 15px;
   margin-bottom: 20px;
 }
@@ -101,7 +100,7 @@ header h1 {
 .seven-p {
   grid-area: seven-p;
   font-size: 1.3em;
-  margin-top: 20px;
+  margin-top: 0;
 }
 .one {
   grid-area: one;
@@ -127,6 +126,10 @@ header h1 {
 
 .seven {
   grid-area: seven;
+  background-image: url(../img/kitchen.jpg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .eight {
